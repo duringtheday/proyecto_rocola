@@ -4,7 +4,7 @@ async function obtenerCanciones() {
         setTimeout(() => {
             const canciones = [
                 { "id": 1, name: "Hoobastank - The Reason", "url": "https://www.youtube.com/embed/fV4DiAyExN0?si=u5AOv9F1FrsYWjun" },
-                { "id": 2, name: "Bon Jovi - This Ain't A Love Song", "url": "https://www.youtube.com/embed/-nlDy6h-v9c?si=GOjnnt76_EOduEpJ" },
+                { "id": 2, name: "Bon Jovi - This Ain't A Love", "url": "https://www.youtube.com/embed/-nlDy6h-v9c?si=GOjnnt76_EOduEpJ" },
                 { "id": 3, name: "Creed - With Arms Wide Open", "url": "https://www.youtube.com/embed/2ZCGONODd6M?si=ypLi3m0P4LwtR8ae" },
                 { "id": 4, name: "Brian McKnight - Back At One", "url": "https://www.youtube.com/embed/rXPfovXw2tw?si=4JigXx8N5dQ7imGi" },
                 { "id": 5, name: "Take That - Back for Good", "url": "https://www.youtube.com/embed/AX_6S_cz7Jg?si=Ch9O4svhHZ3-Twmo" }
