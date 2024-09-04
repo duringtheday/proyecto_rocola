@@ -27,6 +27,25 @@ body {
     background: linear-gradient(to right, blue, violet, green, orange);
     box-shadow: 5px 10px 20px 10px rgba(0, 10, 23, 0.6);
     border-radius: 120px 120px 0 0;
+    background-size: 300% 100%;
+    animation: rocola 3s ease-in-out infinite alternate;
+}
+@keyframes rocola {
+    0% {
+        /* Initial state */
+        background-position: 0% 0%;
+        
+    }
+    50% {
+        /* Midpoint state */
+        background-position: 100% 0%;
+        
+    }
+    100% {
+        /* Final state */
+        background-position: 0% 0%;
+        
+    }
 }
 
 #display-song {
