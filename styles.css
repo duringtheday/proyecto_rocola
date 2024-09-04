@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg, rgb(1, 15, 43), rgb(109, 151, 168));
+}
+
+#rocola-container {
+    position: relative;
+    margin-top: 50px;
+    width: 350px;
+    height: 500px;
+    background: linear-gradient(to right, blue, violet, green, orange);
+    box-shadow: 5px 10px 20px 10px rgba(0, 10, 23, 0.6);
+    border-radius: 120px 120px 0 0;
+}
+
+#display-song {
+    position: absolute;
+    top: 20px;
+    left: 75px;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to top, rgb(1, 1, 31), rgb(8, 96, 134));
+    box-shadow: 1px 1px 20px 5px rgb(0, 10, 23);
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#display-song iframe {
+    width: 100%;
+    height: 100%;
+}
+
+#play {
+    position: absolute;
+    top: 230px;
+    left: 150px;
+    width: 50px;
+    height: 30px;
+    border-radius: 50px;
+    background: linear-gradient(to top, rgb(1, 1, 31), rgb(134, 8, 8)) no-repeat;
+    box-shadow: 1px 1px 5px 1px rgb(255, 226, 255);
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+#play:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to top, rgb(2, 22, 73), rgb(219, 36, 36)) no-repeat;
+}
+
+.list-songs {
+    position: relative;
+    top: 270px;
+    left: 75px;
+    padding: 15px;
+    width: 200px;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top, rgb(32, 5, 1), rgb(194, 58, 8));
+    /* opacity: 1; */
+    box-shadow: 1px 1px 15px 3px rgb(0, 11, 23);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.list-songs:hover {
+    /* transform: scale(1.05); */
+    background: linear-gradient(to top, rgb(2, 22, 73), rgb(219, 36, 36)) no-repeat;
+    transition: transform 0.3s ease-in-out, background 0.2s ease-in-out;
+    /* opacity: 1; */
+}
+
+/* #song-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 200px;
+    height: 55px;
+    background: linear-gradient(to top, rgb(1, 1, 31), rgb(8, 96, 134)) no-repeat;
+    border-radius: 20px 20px 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+#song-2 {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 15px;
+    width: 200px;
+    height: 55px;
+    background: linear-gradient(to top, rgb(1, 1, 31), rgb(8, 96, 134)) no-repeat;
+    text-align: center;
+    font-size: 14px;
+}
+#song-3 {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    padding: 15px;
+    width: 200px;
+    height: 55px;
+    background: linear-gradient(to top, rgb(1, 1, 31), rgb(8, 96, 134)) no-repeat;
+    text-align: center;
+    font-size: 14px;
+}
+#song-4 {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    padding: 15px;
+    width: 200px;
+    height: 55px;
+    background: linear-gradient(to top, rgb(1, 1, 31), rgb(8, 96, 134)) no-repeat;
+    text-align: center;
+    font-size: 14px;
+} */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
